@@ -41,7 +41,6 @@ func (w *WeatherStation) getAllTemperatures() []float64 {
 }
 
 func (w *WeatherStation) notifiyObserver() {
-
 	for _, o := range w.observers {
 		o.update()
 	}
